@@ -43,6 +43,7 @@ body {
     .header-content {
         width: auto;
         margin: 16px;
+        margin-bottom: 0px;
         height: fit-content;
         gap: 40px;
     }
