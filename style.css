@@ -137,10 +137,17 @@ body {
 }
 
 .downloads {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
     width: 100%;
     background-color: rgb(202, 253, 253);
     box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+    .downloads {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
 }
 
 .download-btn {
