@@ -6,7 +6,7 @@
     <title>BeginnCode</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body style="visibility: hidden;">
     <div class="container">
         <div class="header">
             <div class="header-content">
@@ -31,5 +31,14 @@
             </div>
         </div>
     </div>
+    <script>
+        window.addEventListener('load', function () {
+            document.body.style.visibility = 'visible';
+            let hElement = document.querySelector('.header-h');
+            if (hElement) {
+                anotherElement.classList.add('fade-in');
+            }
+        });
+    </script>
 </body>
 </html>
