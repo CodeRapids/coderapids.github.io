@@ -3,11 +3,34 @@ body {
     padding: 0;
 }
 
+.loading-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.loading-text {
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.no-display {
+    display: none;
+}
+
 .container {
+    visibility: hidden;
     display: flex;
     flex-direction: column;
     margin: 0;
     padding: 0;
+}
+
+.visible {
+    visibility: visible;
 }
 
 .header {

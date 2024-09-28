@@ -6,7 +6,10 @@
     <title>BeginnCode</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body style="visibility: hidden;">
+<body>
+    <div class="loading-screen">
+        <p class="loading-text">Loading...</p>
+    </div>
     <div class="container">
         <div class="header">
             <div class="header-content">
@@ -17,23 +20,30 @@
                 <button class="header-youtube-channel-button">My YouTube Channel</button>
             </a>
         </div>
-    </div>
-    <div class="downloads">
-        <div class="item">
-            <div class="item-info">
-                <div class="item-h-and-download-btn">
-                    <h2 class="item-h">File Encrypter</h2>
-                    <a href="https://beginncode.github.io/file-encrypter-dist/">
-                        <button class="download-btn">Go to Download Page</button>
-                    </a>
+        <div class="downloads">
+            <div class="item">
+                <div class="item-info">
+                    <div class="item-h-and-download-btn">
+                        <h2 class="item-h">File Encrypter</h2>
+                        <a href="https://beginncode.github.io/file-encrypter-dist/">
+                            <button class="download-btn">Go to Download Page</button>
+                        </a>
+                    </div>
+                    <p class="item-p">This is a simple application that can encrypt and decrypt all types of files. When you encrypt a file, the program generates a key file with the same name, and you have to place the key file in the same directory where the encrypted file is located in order to decrypt the file.</p>
                 </div>
-                <p class="item-p">This is a simple application that can encrypt and decrypt all types of files. When you encrypt a file, the program generates a key file with the same name, and you have to place the key file in the same directory where the encrypted file is located in order to decrypt the file.</p>
             </div>
         </div>
     </div>
     <script>
         window.addEventListener('load', function () {
-            document.body.style.visibility = 'visible';
+            let loadingScreen = document.querySelector('.loading-screen')
+            if (loadingScreen) {
+                loadingScreen.classList.add('no-display')
+            }
+            let container = document.querySelector('.container')
+            if (container) {
+                container.classList.add('visible')
+            }
             let hElement = document.querySelector('.header-h');
             if (hElement) {
                 hElement.classList.add('fade-in-fast');
