@@ -62,13 +62,11 @@ body {
 @media (max-width: 690px) {
     .header {
         flex-direction: column;
-        background-position: right center;
     }
 
     .header-content {
         width: auto;
         height: fit-content;
-        gap: 40px;
     }
 }
 
