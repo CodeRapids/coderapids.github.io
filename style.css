@@ -50,6 +50,7 @@ body {
     width: 62%;
     height: fit-content;
     margin: 5%;
+    margin-top: 5%;
     margin-bottom: 0%;
     padding: 8%;
     padding-top: 100px;
@@ -67,6 +68,7 @@ body {
     .header-content {
         width: auto;
         height: fit-content;
+        margin-top: 20%;
     }
 }
 
