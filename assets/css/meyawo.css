@@ -2783,6 +2783,19 @@ fieldset:disabled a.btn {
   border-color: #544885;
 }
 
+.my-btn-primary {
+  color: #111111;
+  background-color: transparent;
+  border-width: 1px;
+  border-color: #695aa638;/*#544885*/
+}
+
+.my-btn-primary:hover {
+  color: #fff;
+  background-color: #594c8d;
+  border-color: #544885;/*#544885*/
+}
+
 .btn-primary:focus, .btn-primary.focus {
   box-shadow: 0 0 0 0.2rem rgba(128, 115, 179, 0.5);
 }
@@ -11098,11 +11111,6 @@ p {
 
 .title {
   font-size: calc(15px + (20 - 15) * ((100vw - 300px) / (1300 - 300)));
-  text-decoration: none;
-}
-
-.title:hover {
-  text-decoration: underline;
 }
 
 .title.big {
@@ -11139,7 +11147,7 @@ p {
 
 .service-card {
   position: relative;
-  min-height: 230px;
+  min-height: 270px;/*230*/
   border: 1px solid #dee2e6;
   overflow: hidden;
   border-radius: 3px;
