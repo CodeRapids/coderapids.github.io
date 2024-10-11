@@ -1,5 +1,5 @@
 
-# Dot Dash - License Agreement
+# [Name of the software] License Agreement
 
 ## 1. License Grant  
 You are granted a personal, non-exclusive, non-transferable, and non-commercial license to use this software. This software is licensed, not sold.
